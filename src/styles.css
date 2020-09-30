@@ -1,0 +1,123 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@tailwind screens;
+
+.banner{
+    @apply relative;
+}
+
+.res--wel{
+    @apply transform-none;
+    @apply ease-in-out;
+    @apply duration-300;
+}
+
+.welcome{
+    @apply absolute;
+    @apply bg-secondary-100;
+    @apply text-white p-8;
+    @apply -my-30;
+    @apply left-0;
+    @apply text-6xl;
+    @apply font-bold;
+}
+
+.navi{
+    @apply text-2xl;
+    @apply inline-block;
+    @apply w-25;
+}
+
+.img--li{
+    @apply inline-block;
+    @apply my-5;
+    @apply mx-5%;
+    @apply w-40%;
+    @apply transform-none;
+    @apply ease-in-out;
+    @apply duration-300;
+}
+
+.in--mail{
+    @apply text-xl;
+}
+
+@media (max-width: 1280px){
+    .res--wel{
+        @apply text-5xl;
+    }
+
+    .ar--h2{
+        @apply text-4xl;
+    }
+
+    .navi{
+        @apply text-lg;
+    }
+}
+
+@media (max-width: 1024px){
+    .res--wel{
+        @apply text-4xl;
+    }
+
+    .ar--h2{
+        @apply text-3xl;
+    }
+
+    .in--mail{
+        @apply text-base;
+    }
+}
+
+@media (max-width: 768px){
+    .welcome{
+        @apply relative;
+        @apply text-center;
+        @apply p-4;
+        @apply w-full;
+        @apply my-0;
+    }
+
+    .wel--br{
+        @apply hidden;
+    }
+
+    .res--wel{
+        @apply text-3xl;
+    }
+
+    .img--li{
+        @apply w-full;
+        @apply my-5;
+        @apply mx-auto;
+        @apply block;
+    }
+
+    .ar--h2{
+        @apply my-3;
+        @apply mx-0;
+    }
+}
+
+@media (max-width: 640px){
+    .navi{
+        @apply text-xl;
+        @apply block;
+        @apply w-full;
+        @apply my-4 mx-0;
+    }
+
+    header{
+        @apply relative;
+    }
+
+    nav{
+        @apply top-0;
+    }
+
+}
